@@ -35,3 +35,12 @@ Here is a picture of the simulator:
 6. The required income is 2.5x the `monthly_payment`.
 7. The `monthly_payment` is equal to `(mortgage_amount * monthly_rate) / (1 - (1 + monthly_rate)^term_in_months)`.
 8. These 3 fields must refresh immediately as the 4 original input variables change.
+9. The button at the bottom of the simulator must take you to another page that will display the variables and the results of your simulation.
+
+# What you must do
+
+1. Fork this repo.
+2. Implement this exact same simulator using either 0) Plain, vanilla CSS, Javascript and HTML, 1) Angular, 2) Vue, or 3) Lit Element and deploy and show it locally.
+3. Extra bonus points if you deploy it to a docker container.
+4. Upload it to a Github repo of your own.
+5. Meet with us to show us your work.
