@@ -1,0 +1,22 @@
+:root {
+    --orange:#e35410;
+    --blueLow:#aeebe9;
+    --blueStrong:#16335b;
+    --textBody:#6e6d6d;
+    --textNumbers:#6a6a6a;
+    --messages:#c5c5c5;
+    --borders:#dbdbdb;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: var(--textBody);
+}
+
+h2{
+    font-weight: 700;
+}
+
+input {
+    width: 70%;
+}
