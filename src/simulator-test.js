@@ -1,5 +1,5 @@
 /*----------------------Imports Library or dependencies ---------------*/
-import {LitElement,html, css} from 'lit';
+import {html, css} from 'lit';
 
 /*----------------------Imports Components----------------------------*/
 import {TitleComponent} from './components/title-component/title-component';
@@ -16,13 +16,14 @@ export class SimulatorTest extends  DetailsComponent {
         return [css`
             .container{
                 padding: 2rem 1rem;
-                width:90%;
+                width:73%;
                 height:100%;
                 margin:auto;
             }
 
             .card{
                 border: 1px solid var(--borders);
+                clip-path:polygon( 64px 0, 100% 0, 100% calc(100% - 52px), calc(100% - 64px) 100%, 0 100%, 0 52px );
             }
             .views{
                 display:grid;
@@ -57,6 +58,8 @@ export class SimulatorTest extends  DetailsComponent {
                 text-decoration: none;
                 color: white;
             }
+
+            
         `];
    }
    
@@ -83,7 +86,7 @@ export class SimulatorTest extends  DetailsComponent {
 /*-----------------------------RENDER------------------------------*/
     render(){
         return html`
-            <div class="container">
+            <div class="container clip-path">
                 <div class="card">
                     <title-component></title-component>
                     <div class="views">
@@ -100,6 +103,8 @@ export class SimulatorTest extends  DetailsComponent {
                         <a href="../VisualInformation.html" @click=${this.sendInfo}>${TEXT.SEND.message}</a>
                     </div>
                </div>
+               <div></div>
+               <div></div>
             </div>
         `
     }

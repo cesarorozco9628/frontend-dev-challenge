@@ -91,7 +91,10 @@ export class SettingComponent extends InputRange {
                 </div>
                 <!-- campo de porcentaje -->
                 <div class="border-bottom fields pd-btm">
-                    <span class="span-porcent">${TEXT.SETTING.hitch}</span>
+                    <div>
+                        <span class="span-porcent">${TEXT.SETTING.hitch}</span>
+                        <icon-infor></icon-infor>
+                    </div>
                     <div>
                         <div class="grid-porcent">
                             ${this.printText(TEXT.SETTING.labelHitch)}
@@ -122,7 +125,10 @@ export class SettingComponent extends InputRange {
                 </div>
                 <!-- campo de plazos -->
                 <div class="fields" style="padding: 1rem 0px 0 0;">
-                    <span>${TEXT.SETTING.deadLines}</span>
+                    <div>
+                        <span>${TEXT.SETTING.deadLines}</span>
+                        <icon-infor></icon-infor>
+                    </div>
                     <input-range
                         .min=${this.deadLines.min}
                         .max=${this.deadLines.max}
